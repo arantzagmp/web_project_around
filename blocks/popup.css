@@ -1,0 +1,225 @@
+@media screen and (min-width: 769px) {
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup__opened {
+    display: flex;
+  }
+
+  .popup__container {
+    width: 30.4375rem;
+    height: 24.1875rem;
+    position: absolute;
+  }
+
+  .popup__form {
+    display: flex;
+    width: 26.875rem;
+    height: 20.447rem;
+    flex-shrink: 0;
+    padding: 2.12rem 2.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.75rem;
+    position: absolute;
+    bottom: 0rem;
+    border-radius: 0.625rem;
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .popup__title {
+    width: 100%;
+    color: #000;
+    margin: 0;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .popup__field {
+    display: flex;
+    width: 22.375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8125rem;
+  }
+
+  .popup__input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-size: 1rem;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .popup__input-line {
+    width: 100%;
+    height: 0.0625rem;
+    opacity: 0.2;
+    background: #000;
+  }
+
+  .popup__submit-button,
+  .popup__close-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+  }
+.popup__close-button {
+  position: absolute;
+right: 0.02694rem;
+top: 0rem;
+}
+  .popup__submit-button {
+display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.375rem;
+    height: 3.1345rem;
+    background: #000;
+  }
+
+  .popup__submit-button:hover {
+    opacity: 0.5;
+  }
+
+  .popup__submit-button-text {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .popup__opened {
+    display: flex;
+  }
+  .popup__container {
+    display: flex;
+    width: 17.64906rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.875rem;
+    position: relative;
+  }
+  .popup__close-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup__close-icon {
+    width: 1.625rem;
+    height: 1.625rem;
+    pointer-events: none;
+  }
+  .popup__close-button:hover .popup__close-icon {
+    opacity: 0.5;
+  }
+  .popup__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20.125rem;
+    padding: 1.56rem;
+    gap: 3.19rem;
+    border-radius: 0.625rem;
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  }
+  .popup__title {
+    width: 100%;
+    color: #000;
+    margin: 0;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .popup__field {
+    width: 14.875rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+  }
+  .popup__input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-size: 1rem;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .popup__input-line {
+    width: 100%;
+    height: 0.0625rem;
+    opacity: 0.2;
+    background: #000;
+  }
+  .popup__submit-button {
+    background-color: #000;
+    border: none;
+    width: 14.875rem;
+    height: 2.875rem;
+    flex-shrink: 0;
+  }
+  .popup__submit-button:hover {
+    opacity: 0.5;
+  }
+  .popup__submit-button-text {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
