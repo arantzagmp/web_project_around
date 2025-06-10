@@ -10,3 +10,4 @@ Para este proyecto utilicé diferentes validadores tanto de css, html como de be
 Primero armé el archivo desde terminal donde me puse a crear todas las carpetas. Después decidí de darle  formato al archivo de diseño y ordenarlo todo en figma, para despues copiar y armar todos los estilos en bloques. De ahi fui nombrando todo para poderloi pasar más facil a html. Lo que me sirve es primero hacer que funcione la version de desktop y de ahi hago el de mobil. Una vez que ya supe como hacer funcionar bien uno.
 
 4. El enlace a GitHub Pages
+https://arantzagmp.github.io/web_project_around/
