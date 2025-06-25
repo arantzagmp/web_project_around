@@ -8,7 +8,15 @@
 .element__like:hover {
   opacity: 0.5;
 }
-
+.icon__trash{
+width: 1.125rem;
+height: 1.1875rem;
+left: 15rem;
+top: 1.25rem;
+position: absolute;
+background: none;
+border: none;
+}
 
 @media screen and (min-width: 769px) {
 .elements {
@@ -26,6 +34,7 @@
   width: 17.625rem;
   height: 22.5625rem;
   flex-shrink: 0;
+  position: relative;
 }
 .element__image {
   width: 17.625rem;

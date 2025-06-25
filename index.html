@@ -23,7 +23,11 @@
             <img src="images/Avatar.svg" alt="avatar" class="profile__avatar" />
             <div class="profile__info">
               <h3 class="profile__name">Jacques Cousteau</h3>
-              <button onclick="openPopup()" class="profile__edit-button" type="button">
+              <button
+                onclick="openPopup()"
+                class="profile__edit-button"
+                type="button"
+              >
                 <img
                   src="images/edit__button.svg"
                   alt="edit button"
@@ -33,63 +37,25 @@
               <p class="profile__subtitle">Explorador</p>
             </div>
           </div>
-          <img src="images/add__button.svg" class="profile__add-button" alt="botón para agregar" />
+          <button
+            onclick="openPopupCreate()"
+            class="profile__add-button"
+            style="background: none"
+          >
+            <img src="images/add__button.svg" alt="botón para agregar" />
+          </button>
         </section>
 
-        <section class="elements">
-          <div class="element">
-            <img src="images/dallas.jpg" alt="imagen de Dallas" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">Dallas, TX</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="images/chinatownsf.jpg" alt="imagen de China Town San Francisco" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">China Town, SF</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="images/Brooklyn.jpg" alt="imagen de Brooklyn Nueva York" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">Brooklyn, NYC</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="images/chicago.jpg" alt="imagen de Chicago" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">Chicago, IL</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="images/neworleans.jpg" alt="imagen de New Orleans Louisiana" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">New Orleans, LA</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="images/Annapolis.jpg" alt="imagen de Annapolis" class="element__image" />
-            <div class="element__footer">
-              <p class="element__name">Annapolis, MD</p>
-              <img class="element__like" src="images/heart.svg" alt="corazón" />
-            </div>
-          </div>
-        </section>
+        <section class="elements"></section>
 
         <div class="popup">
           <div class="popup__container">
             <button type="button" class="popup__close-button">
-              <img src="images/close-icon.svg" alt="Cerrar" class="popup__close-icon" />
+              <img
+                src="images/close-icon.svg"
+                alt="Cerrar"
+                class="popup__close-icon"
+              />
             </button>
 
             <form class="popup__form">
@@ -120,10 +86,63 @@
               </div>
 
               <button type="submit" class="popup__submit-button">
-  <span class="popup__submit-button-text">Guardar</span>
-</button>
-
+                <span class="popup__submit-button-text">Guardar</span>
+              </button>
             </form>
+          </div>
+        </div>
+
+        <div class="popupCreate">
+          <div class="popup__container">
+            <button type="button" class="popup__close-button">
+              <img
+                src="images/close-icon.svg"
+                alt="Cerrar"
+                class="popup__close-icon"
+              />
+            </button>
+
+            <form class="popup__form">
+              <h2 class="popup__title">Nuevo lugar</h2>
+
+              <div class="popup__field">
+                <input
+                  type="text"
+                  id="Título"
+                  name="Título"
+                  class="popup__input"
+                  placeholder="Título"
+                  required
+                />
+                <div class="popup__input-line"></div>
+              </div>
+
+              <div class="popup__field">
+                <input
+                  type="url"
+                  id="Enlace"
+                  name="Enlace"
+                  class="popup__input"
+                  placeholder="Enlace a la imagen"
+                  required
+                />
+                <div class="popup__input-line"></div>
+              </div>
+
+              <button type="submit" class="popup__submit-button">
+                <span class="popup__submit-button-text">Crear</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="popupImage">
+          <div class="popupImage__container">
+            <button class="popupImage__close-button" ><img src="images/close-icon.svg" alt="close icon"></button>
+            <div class="popupImage__frame">
+            <img src="" alt="" class="popupImage__image" />
+            <p class="popupImage__caption"></p>
+            </div>
           </div>
         </div>
       </main>
