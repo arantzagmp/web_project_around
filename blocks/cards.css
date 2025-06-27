@@ -8,7 +8,9 @@
 .element__like:hover {
   opacity: 0.5;
 }
-.icon__trash{
+
+@media screen and (min-width: 769px) {
+  .icon__trash{
 width: 1.125rem;
 height: 1.1875rem;
 left: 15rem;
@@ -18,7 +20,6 @@ background: none;
 border: none;
 }
 
-@media screen and (min-width: 769px) {
 .elements {
   display: grid;
   row-gap: 1.25rem;
@@ -64,6 +65,7 @@ border: none;
 }
 
 @media screen and (min-width: 321px) and (max-width: 768px) {
+
  .elements {
 display: grid;
 width: 17.625rem;
@@ -79,6 +81,7 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 17.625rem;
   height: 22.5625rem;
   flex-shrink: 0;
+  position: relative
 }
 .element__image {
   width: 17.625rem;
@@ -104,4 +107,13 @@ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.icon__trash{
+top: 2rem;
+right: 2rem;
+width: 1.125rem;
+height: 1.1875rem;
+position: absolute;
+background: none;
+border: none;
 }

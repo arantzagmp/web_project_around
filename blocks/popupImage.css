@@ -13,23 +13,24 @@
 }
 
 .popupImage__container {
-  position: relative;
+position: relative;
 display: flex;
 width: 54.5625rem;
 height: 38.5rem;
 flex-direction: column;
 justify-content: flex-end;
-align-items: flex-start;
+align-items: center;
 gap: 0.625rem;
 flex-shrink: 0;
 }
 .popupImage__frame{
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items:center;
 gap: 0.625rem;
 position: relative;
 }
+
 .popupImage__image {
   max-width: 100%;
   height: auto;
@@ -53,7 +54,7 @@ height: 2.5rem;
 background: none;
 border: none;
 position: absolute;
-right: 0.54475rem;
-top: 0.51775rem;
+right: 20rem;
+top: 12rem;
 
 }
