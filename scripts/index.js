@@ -33,7 +33,7 @@ function handleProfileFormSubmit(evt) {
   profileName.textContent = nameValue;
   profileJob.textContent = aboutValue;
 
-  closePopup();
+  closePopup(popup);
 }
 
 formElement.addEventListener("submit", handleProfileFormSubmit);
@@ -149,7 +149,7 @@ initialCards.forEach((card) => {
 function handleImageCreate(evt) {
   evt.preventDefault();
 
-  const imageTitleValue = formCreate.elements["Título"].value;
+  const imageTitleValue = formCreate.elements["title"].value;
   const imageLinkValue = formCreate.elements["Enlace"].value;
 
   const newCard = createCard(imageTitleValue, imageLinkValue);
