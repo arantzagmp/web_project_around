@@ -150,7 +150,7 @@ function handleImageCreate(evt) {
   evt.preventDefault();
 
   const imageTitleValue = formCreate.elements["title"].value;
-  const imageLinkValue = formCreate.elements["Enlace"].value;
+  const imageLinkValue = formCreate.elements["image"].value;
 
   const newCard = createCard(imageTitleValue, imageLinkValue);
   elementsContainer.appendChild(newCard);
