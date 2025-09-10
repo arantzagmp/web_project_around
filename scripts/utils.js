@@ -1,7 +1,14 @@
 export function openPopup(popupElement) {
   popupElement.classList.add("popup__opened");
 }
-
+export const initialCards = [
+  { name: "Dallas, TX", link: "images/dallas.jpg" },
+  { name: "China Town, SF", link: "images/chinatownsf.jpg" },
+  { name: "Brooklyn, NYC", link: "images/Brooklyn.jpg" },
+  { name: "Chicago, IL", link: "images/chicago.jpg" },
+  { name: "New Orleans, LA", link: "images/neworleans.jpg" },
+  { name: "Annapolis, MD", link: "images/Annapolis.jpg" },
+];
 export function closePopup(popupElement) {
   popupElement.classList.remove("popup__opened");
   popupElement.classList.remove("popupCreate__opened");
@@ -39,3 +46,12 @@ export function enableEscClose(popups) {
     }
   });
 }
+
+export const validationConfig = {
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__submit-button",
+  inactiveButtonClass: "popup__button_disabled",
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__error_visible",
+};
