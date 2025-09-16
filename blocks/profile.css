@@ -10,10 +10,13 @@
     align-items: center;
     gap: 1.875rem;
   }
-  .profile__avatar {
-    width: 7.5rem;
-    height: 7.5rem;
-  }
+.profile__avatar {
+  width: 7.5rem; height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;   
+  aspect-ratio: 1 / 1; 
+  display: block;      
+}
   .profile__info {
     display: flex;
     width: 25.9375rem;
@@ -93,9 +96,12 @@
     align-self: stretch;
   }
   .profile__avatar {
-    width: 7.5rem;
-    height: 7.5rem;
-  }
+    width: 7.5rem; height: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;   
+  aspect-ratio: 1 / 1; 
+  display: block;      
+}
   .profile__info {
     display: flex;
     justify-content: center;
@@ -157,5 +163,60 @@
   }
   .profile__add-button:hover {
     opacity: 0.5;
+  }
+}
+
+.profile__avatar-wrap {
+  position: relative;
+  display: inline-block;
+  line-height: 0;          
+}
+
+.profile__avatar {
+  
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__avatar-edit-button {
+  position: absolute;
+  inset: 0;                
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,.45);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity .2s ease;
+  z-index: 1;
+  
+}
+
+.profile__avatar-wrap:hover .profile__avatar-edit-button,
+.profile__avatar-edit-button:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+
+.profile__avatar-edit-button img {
+  display: block;
+}
+
+
+@media screen and (min-width: 769px) {
+  .profile__avatar-edit-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);     
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .profile__avatar-edit-button img {
+    width: 1.125rem;
+    height: 1.125rem;
+    filter: invert(1);
   }
 }

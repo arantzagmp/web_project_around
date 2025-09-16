@@ -1,0 +1,54 @@
+.PopupWithConfirmation {
+width: 100vw;
+flex-direction: column;
+align-items: center;
+
+}
+.PopupWithConfirmation__container{
+height: 11.3125rem;
+width: 26.875rem;;
+background-color: #FFFFFF;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 1.25rem;
+border-radius: 0.625rem;
+box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+}
+.PopupWithConfirmation__text{
+width: 22.375rem;
+height: 1.4375rem;
+flex-shrink: 0;
+color: #000;
+font-family: Inter;
+font-size: 1.5rem;
+font-style:normal;
+font-weight: 900;
+line-height: normal;
+}
+.PopupWithConfirmation__close-button{
+  position: absolute;
+right: 27rem;
+top: 12rem;
+background: none;
+border: none;
+
+}
+.PopupWithConfirmation__submit-button{
+width: 22.375rem;
+height: 3.125rem;
+flex-shrink: 0;
+background-color: #000;
+border-radius: 0.4rem;
+border-style: none;
+}
+.PopupWithConfirmation__submit-text{
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
